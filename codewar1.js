@@ -1,286 +1,196 @@
-// kata 1 
-// take a string of numbers and return it as a reversed array
-/*
-function digitize(n) {
- arr = n.toString().split("").map(function(t){return parseInt(t)})
- arr.reverse();
- return arr
-}
-
-console.log(digitize('123456789'))
-*/
-// kata 2 (gg ez)
-// This function is not operating properly and pushing an error, fix it.
-/*
-function multiply(a, b){
-  return a * b;
-};
-
-console.log(multiply(3,6));
-
-*/
+// function lastDigit(num1, num2){
+//   num1 = num1.toString();
+//   num2 = num2.toString();
+//   if(num1[num1.length-1] === num2[num2.length-1]){
+//     return true;
+//   } else{
+//     return false;
+//   }
+// }
+// lastDigit(22,301);
 
 
+// function stringToNumber(str){
+//   var num = parseInt(str);
+//   return num;
+// }
+// var stringToNumber = function(str){
+//   return +str;
+// }
+// var stringToNumber = function(str){
+//   return Number(str);
+// }
+
+// function stringToNumber(str){
+//   return Number(str);
+// }
 
 
-// kata 3
-// write a function that removes all the white space from a string.
-/*
-function noSpace(x){
-  x = x.split(' ').join('')
-  return x;
-};
+// stringToNumber('23')
 
-console.log(noSpace('tt otototot oooo 99 '));
-*/
 
-// kata 4
-// Return a string with double characters (unfinished);
-/*
-function doubleChar(str) {
+// function reverse(string){
+// str = string.split(" ").reverse().join(" ");
+// return str;
+// }
+
+
+// reverse("Hello Mt");
+
+
+// function maps(x){
+//   return x.map(n => n * 2);
+// }
+// maps([1,2,3]);
+
+
+// function noSpace(str){
+// var emptyString = '';
+//   for(i = 0; i < str.length; i++){
+//     if(str[i] !== ' '){
+    
+//       emptyString += str[i];
+//     }
+//       }
+   
+//   return emptyString;
+// }
+
+
+// function litres(time) {
+//   var water = (time * 0.5);
+// return Math.floor(water);
+// }
+// litres(12.3);
+
+
+// function countPositivesSumNegatives(input) {
+//   if (!input || input.length === 0) return [];
+//   var count = 0;
+//   var sum = 0;
+  
+//     input.forEach(function(i){ 
+//     if (i > 0){
+//       count++;
+//         } else {
+//         sum += i;
+//         }
+//     });
+//   return [count, sum];
+// }
+
+// countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
+
+
+// function fakeBin(x){
+//   let result = '';
+//   for(let i = 0; i < x.length; i++){
+//     x[i] < 5 ? result += 0 : result += 1;
+//   }
+//   return result;
+// }
+
+
+
+// function fakeBin(x){
+//   var emptyString = '';
+//   for(var i = 0; i < x.length; i++){
+//     if(x[i] > 5){
+//       emptyString += '1';
+//     } else {
+//       emptyString += '0';
+//     }
+//   }
+//   return emptyString;
+// }
+
+
+
+// function fakeBin(x){
+//   var newBin = x.split('');
+//   for (var i = 0; i < newBin.length; i++) {
+//       if (Number(newBin[i]) < 5) {
+//           newBin[i] = 0;
+//       } else if(Number(newBin[i]) >= 5) {
+//       newBin[i] = 1;
+//     }
+//     }
+//   newBin = newBin.join('');
+//   return newBin;
+// }
+
+// fakeBin('4934210');
+
+
+
+// function countSheeps(arrayOfSheep) {
+//   var count = 0;
+//   for(var i = 0; i < arrayOfSheep.length; i++){
+//     if(arrayOfSheep[i] === true){
+//     count++;
+//   }
+  
+//   }
+//   return count;
+// }
+
+
+
+
+
+              
+              
+              
+
+
+
+countSheeps([true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]);
+    
+    function countSheeps (arrayOfSheep) {
+      var sheepCounter = 0;
+      for( var i = 0; i < arrayOfSheep.length; i++) {
+        if(arrayOfSheep[i]=== true) {
+          sheepCounter++;
+        }
+      }
+      return sheepCounter;
+    }
   
   
-  let merp = str.repeat(2);
-
-  let arr = merp.split('');
-   for(let i = 0; i <arr.length; i++){
-    if (arr.length >= str.length){
-      arr.push(arr.splice(0, arr.length))
-    }
-   }
-   
-  console.log(arr)
- 
-  return arr.join();
-}
-*/
-/*
-
-function doubleChar(str){
-  for (let i = 0; i <= str.length; i++){
-    if(i < str.length+1) {
-      str[i].repeat(2);
-    }
-  }
-  return str
-}
-*/
-// 
-
-// console.log(doubleChar('this'));
-
-// Changing a boolean to a word
-/*
-function boolToWord(bool){
-  if (bool){
-     return ('Yes')
-  } else{
-     return 'No'
-  }
-}
-
-console.log(boolToWord(false))
-*/
-
-/*
-
-// Finding the average/grade
-
-function getAverage(arr,marks){
-  var accumulator = 0;
   
-  for(var i = 0; i < arr.length; i++){
-
-  accumulator += arr[i]
-
-
-}
-
-return Math.floor(accumulator/arr.length);
-
-}
-*/
-
-
-// Beast dinner function 
-/*
-function feast(beast, dish){
-
-    function guestFunction(beast){
-  for (let i = 0; i <= beast.length; i++){
-    let beastFirst = beast.slice(0,1);
-    let beastSecond = beast.slice(beast.length-1);
-    let beastTogether = beastFirst + beastSecond;
-    return beastTogether;
-  }
-    }
-   function dinnerFunction(dish){ 
-  for(let i = 0; i <= dish.length; i++){
-    let dishFirst = dish.slice(0,1);
-    let dishSecond = dish.slice(dish.length-1);
-    let dishTogether  = dishFirst + dishSecond;
-    return dishTogether;
-  }
-   }
-   return (guestFunction(beast) === dinnerFunction(dish));
-}
-
-
-console.log(feast("birdman", "chocolate cake"));
-*/
-
-// RPS KATA
-/*
-const rps = (p1,p2) => {
-  if(p1 === 'scissors' && p2 === 'rock'){
-    return 'Player 2 won!'
-  } else if (p1 === 'scissors' && p2 === 'paper') {
-    return 'Player 1 won!'
-  }
-  if(p1 === 'rock' && p2 === 'scissors'){
-    return 'Player 1 won!'
-  } else if (p1 === 'rock' && p2 === 'paper'){
-    return 'Player 2 won!'
-  }
-  if (p1 === 'paper' && p2 === 'rock'){
-    return 'Player 1 won!'
-  } else if (p1 === 'paper' && p2 === 'scissors'){
-    return 'Player 2 won!'
-  }
-  if (p1 === p2){
-    return 'Draw!'
-  }
-
-}
-
-console.log(rps('rock','paper'));
-*/
-
-
-
-/*
-const litres = (time) => {
-  water = Math.floor(0.5 * time)
-  return water; 
-}
-
-console.log(litres(11.8))
-*/
-
-/*
-const finalGrade = (exam, projects) => {
-  if (exam >= 90 && exam <=100){
-    return 100;
-} else if (projects >10) {
-  return 100;
-}
-  if (exam >= 75 && exam <= 100 && projects >= 5 && projects <= 10){
-    return 90;
-  }
-  if (exam >=50 && exam <= 100 && projects >=2 && projects <= 5){
-    return 75;
-  }
-return 0;
   
-}
-
-
-console.log(finalGrade(50,2))
-*/
-
-/*
- const hoopCount = (n) => {
-   if (n >= 10){
-     return 'Great, now move on to new tricks.'
-   } else {
-     return 'Keep at it until you get it.'
-   }
- }
-*/
-
-// alt solution
-/*
-const hoopCount = (n) => {
-  return (n<10) ? 'Keep at it until you get it' : 'Great, now move on to tricks'
-}
-
-const even_or_odd = (num) => {
-  if (num%2 === 0){
-    return 'Even';
-  } else {
-    return 'Odd';
-  };
-
-};
-
-console.log(even_or_odd(191))
-
-*/
-
-/*
-
-const positiveSum = (arr) => {
-  acc = 0;
-  for (i=0;i<=arr.length;i++){
-    if(arr[i] > 0){
-      acc += arr[i];
-    }
-  }
-return acc;
-}
-
-positiveSum([-1,-2,-3,1,2,3]);
-
-*/
-
-/*
-
-const toAlternatingCase = (str) => {
-  let acc = '';
-  for(i=0;i<str.length;i++){
-    if(str[i] >= 5 && str[i] <= 8 && str[i] >=4){
-      acc += str[i].toUpperCase();
-
-      
-    }
-  }
-  return acc
-}
-
-console.log(toAlternatingCase('Encyclopedia'));
-
-*/
-/*
-String.prototype.toAlternatingCase = function(){
-  let acc = '';
-  for(let i=0;i<this.length; i++){
-    if (this[i] === this[i].toLowerCase()){
-      acc += this[i].toUpperCase();
-    }else if(this[i] === this[i].toUpperCase()){
-      acc += this[i].toLowerCase();
-    }else{
-      acc += this[i];
-    }
-  }
-  return acc;
-}
-*/
-
-
-// context --- a group of information/number of properties/that this has access to. 
-/*
-const smallInt = (arr) => {
- return Math.min.apply(null,arr);
-}
-*/
-
-Array.prototype.smallestInteger = smallInt = (arr) => {
-    return Math.min.apply(null,arr);
-   }
-   
-   console.log(smallInt([2,5,0,-2,-1]))
-   
-   Array.prototype.smallestInteger([2,5,0,-2,-1])
-   
-   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
