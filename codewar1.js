@@ -1,42 +1,17 @@
-
-
-
-// constructor
-
-function Soldier(health, strength){
-    this.health = health;
-    this.strength = strength;
-  
-  // attack() method
-  
-    this.attack = function(){
-      return this.strength;
-    }
+class Rectangle {
+    constructor( width, height);
+    this.width = width;
+    this.height = height;
   }
   
-  // instatiate an object
-  // const soldier1 = viking  
-  
-  // recieveDamage() method
-  
-  receiveDamage: function(theDamage) {
-  // remove the recieved damage from the health property
-  // return nothing (undefined?)
+  calculatePerimeter() {
   }
   
-  // VIKING 
+  calculateArea() {
   
-  // A Viking is a Soldier with an additional property, their name. They also have a different receiveDamage() method and new method, battleCry().
+  }
   
-  // Modify the Viking constructor function, have it inherit from Soldier, reimplement the receiveDamage() method for Viking, and add a new battleCry() method.
+  class Square extends Rectangle {
+    constructor()
   
-  // inheritance
-  // Viking should inherit from Soldier
-  
-  // let Soldier = new Viking 
-  
-  const viking = new Soldier('name', recieveDamage)
-  
-  
-  
-  
+  }
