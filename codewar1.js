@@ -1,14 +1,33 @@
-var emptyArray = []
 
-function doublePush(blah) {
-  emptyArray.push(blah);
-  emptyArray.push(blah);
+var i = 20;
+
+while (i>0){
+  console.log(i)
+  i--
 }
 
-doublePush("the eagle");
+console.log("-----------");
 
-console.log(emptyArray);
+var twoDArray = [];
 
-doublePush("the eagle");
+for(let i=0; i < 10; i++){
+  twoDArray.push([i])
+  for(let j=1; j<10; j++){
+    
+    twoDArray[i].push(j)
+  }
+}
 
-console.log(emptyArray)
+console.log("-----------")
+
+
+for(let i=5; i <= 25; i++) {
+  console.log(i)
+
+  if(i ===15){
+    break;
+  } else{
+    console.log(i)
+  }
+}
+
