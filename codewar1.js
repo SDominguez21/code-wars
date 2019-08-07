@@ -1,33 +1,70 @@
+// var theNUmber = 5;
+// we're not really gonna use var
 
-var i = 20;
+// let num = 5;
 
-while (i>0){
-  console.log(i)
-  i--
-}
+// console.log(num);
 
-console.log("-----------");
+// num = 7;
+// num = num+1;
+// num +=1;
+// num ++;
 
-var twoDArray = [];
+// console.log(num);
 
-for(let i=0; i < 10; i++){
-  twoDArray.push([i])
-  for(let j=1; j<10; j++){
-    
-    twoDArray[i].push(j)
-  }
-}
+// const secondNum = 11;
+// console.log(secondNum);
+// secondNum = 5;
+// console.log(secondNum);
 
-console.log("-----------")
+// function checkAPersonAge(theAge){
+
+//   if(theAge >= 65){
+//     console.log("Welcome oldie");
+//   } else if (theAge >= 21){
+//     console.log("welcome to the bar, please proceed through the metal detector");
+//   } else if (theAge >= 18){
+//     console.log("sup, you can hookha");
+//   } else if (theAge <= 18) {
+//     console.log("sorry no kidz");
+//   }
+// }
+
+// checkAPersonAge(19);
+
+// let theNumber = 5;
+
+// while(theNumber < 100){
+//  theNUmber+=1;
+
+//   // theNumber+=1;
+//   // if(theNumber % 11 === 0){
+//   //   break;
+//   // }
+// if(theNumber % 11 === 0){continue};
+
+// console.log(theNumber); 
+
+// // }
+
+// do {
+//   console.log("this wouldnt run in a mnotmal while loop")
+// } while (5 < 1);
 
 
-for(let i=5; i <= 25; i++) {
-  console.log(i)
 
-  if(i ===15){
-    break;
-  } else{
-    console.log(i)
-  }
-}
+// function counterHowManySs(aString){
+
+// let totalNumberOfSs = 0;
+
+
+// for(let i=0; i < aString.length; i++){
+//  if(aString.charAr(i) === "s"){
+//    totalNumberOfSs++;
+//  } 
+// }
+// console.log(`there are ${totalNumberOfSs} S's in the string`);
+// }
+
+// let aSentence = "The street is soggy and avoid dog shit"
 
