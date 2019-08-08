@@ -1,70 +1,54 @@
-// var theNUmber = 5;
-// we're not really gonna use var
+// Names and Input
+let hacker1 = "Serena";
+console.log(`The driver's name is ${hacker1}`);
 
-// let num = 5;
+let hacker2 = "Mat";
+console.log(`The navigator's name is ${hacker2}`);
 
-// console.log(num);
+//Conditionals
+let h1_len = hacker1.length;
+let h2_len = hacker2.length;
 
-// num = 7;
-// num = num+1;
-// num +=1;
-// num ++;
+if (h1_len > h2_len) {
+  console.log(`The Driver has the longest name, it has ${h1_len} characters`);
+} else if (h1_len < h2_len) {
+  console.log(
+    `Yo, navigator got the longest name, it has ${h2_len} characters`
+  );
+} else {
+  console.log(`wow, you both got equally long names, ${h1_len} characters!!`);
+}
 
-// console.log(num);
+// LOOPS
+let spaceName = "";
 
-// const secondNum = 11;
-// console.log(secondNum);
-// secondNum = 5;
-// console.log(secondNum);
+for (let i = 0; i < h1_len; i++) {
+  if (i === h1_len - 1) {
+    spaceName += hacker1[i].toUpperCase();
+  } else {
+    spaceName += hacker1[i].toUpperCase() + ` `;
+  }
+}
+console.log(spaceName);
 
-// function checkAPersonAge(theAge){
+function reverse(name) {
+  console.log(
+    name
+      .split("")
+      .reverse()
+      .join("")
+  );
+}
 
-//   if(theAge >= 65){
-//     console.log("Welcome oldie");
-//   } else if (theAge >= 21){
-//     console.log("welcome to the bar, please proceed through the metal detector");
-//   } else if (theAge >= 18){
-//     console.log("sup, you can hookha");
-//   } else if (theAge <= 18) {
-//     console.log("sorry no kidz");
-//   }
-// }
+reverse(hacker2);
 
-// checkAPersonAge(19);
+console.log(hacker1.localeCompare(hacker2));
+if (!hacker1.localeCompare(hacker2)) {
+  console.log(`The driver's name goes first`);
+} else if (hacker2.localeCompare(hacker1)) {
+  console.log(`Yo, the navigator goes first definitely`);
+} else {
+  console.log(`What?! You both got the same name?`);
+}
 
-// let theNumber = 5;
-
-// while(theNumber < 100){
-//  theNUmber+=1;
-
-//   // theNumber+=1;
-//   // if(theNumber % 11 === 0){
-//   //   break;
-//   // }
-// if(theNumber % 11 === 0){continue};
-
-// console.log(theNumber); 
-
-// // }
-
-// do {
-//   console.log("this wouldnt run in a mnotmal while loop")
-// } while (5 < 1);
-
-
-
-// function counterHowManySs(aString){
-
-// let totalNumberOfSs = 0;
-
-
-// for(let i=0; i < aString.length; i++){
-//  if(aString.charAr(i) === "s"){
-//    totalNumberOfSs++;
-//  } 
-// }
-// console.log(`there are ${totalNumberOfSs} S's in the string`);
-// }
-
-// let aSentence = "The street is soggy and avoid dog shit"
-
+// Lorem ipsum generator
