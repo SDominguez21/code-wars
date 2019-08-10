@@ -1,22 +1,12 @@
-// function eatDinner(){
-//   setTimeout(function(){
-//     console.log("Eating the dinner 🍽");
-//   }, 1000)
-// }
+var numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+let reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-// function eatDessert(){
-//   console.log("Eating the dessert 🍰");
-// }
-
-// eatDinner(); 
-// eatDessert(); 
-
-// the console:
-// Eating the dessert 🍰
-// Eating the dinner 🍽
-
-let countTheLetter = function(TheString) {
-    return TheString.length;
+function averageNumbers(numbersAvg) {
+  if(numbersAvg.length == 0){
+    return 
+    } else if (numbersAvg.length == 1){
+      return numberAvg.reducer(reducer);
+    } 
   }
-  
-  
+}
+    console.log(result); 
