@@ -1,52 +1,95 @@
-// 
+var cities = ["miami", "barcelona", "madrid", "amsterdam", "berlin", "sao paulo", "lisbon", "mexico city", "paris"];
 
-// function sumArray(arrayOfNumbers){
-// let total = 0;
-// arrayOfNumbers.forEach((eachSingleNumber)=>{
-// total += eachSingleNumber;
-// })
-// return total;
-// }
+function capitalizeCitiesNames(arrayOfCities){
+  return arrayOfCities.map(oneCity => oneCity.charAt(0).toUpperCase()+ oneCity.slice(1));
 
-// function averageNumbers(arrOfNums){
-//   if(arrOfNums.length === 0)(return undefined)
-//   return sumArray(arrOfNum)/arrOfNums.length;
-// }
+}
+capitalizeCitiesNames(Cities);
+lets startingNums = [0,1,2,3,4,5,6]; 
 
-// function uniquifyArray(arrayOfWords){
-//   let newArray = [];
-//   arrayOfWords.forEach((eachWord)=>{
-//     eachWord
-//   })
-// }
+// function addOneToEach(arrayToStartWith){
 
-// FINDING ELEMENTS
-// let result = false; 
-// ^default
+let finalArray = startingNums.map((eachNumber, index)=>{
+return eachNumber**2;
+})
+console.log(startingNums);
+console.log(finalArray);
+//  }
 
-// function greatestProduct(matrix){
-  
-//   let greatest = 0;
-//   matrix.forEach((eachRow)=>{
-//       for(let i = 0, i < eachRow.length -4, i++){
-//         let product = eachRow[i]*eachRow[i+1]*eachRow[i+2]*eachRow[i+3];
-//         if(product . greatest){
-//           console.log(eachRow[i], eachRow[i+1], eachRow[i+2], eproduct)
-//           greatest = product; 
-//         }
-//     }
-//   })
+const students = [
+    {
+      name: "Tony Parker",
+      firstProject: 80,
+      secondProject: 75,
+      finalExam: 90
+    },
+    {
+      name: "Marc Barchini",
+      firstProject: 84,
+      secondProject: 65,
+      finalExam: 65
+    },
+    {
+      name: "Claudia Lopez",
+      firstProject: 45,
+      secondProject: 95,
+      finalExam: 99
+    },
+    {
+      name: "Alvaro Briattore",
+      firstProject: 82,
+      secondProject: 92,
+      finalExam: 70
+    },
+    {
+      name: "Isabel Ortega",
+      firstProject: 90,
+      secondProject: 32,
+      finalExam: 85
+    },
+    {
+      name: "Francisco Martinez",
+      firstProject: 90,
+      secondProject: 55,
+      finalExam: 78
+    },
+    {
+      name: "Jorge Carrillo",
+      firstProject: 83,
+      secondProject: 77,
+      finalExam: 90
+    },
+    {
+      name: "Miguel López",
+      firstProject: 80,
+      secondProject: 75,
+      finalExam: 75
+    },
+    {
+      name: "Carolina Perez",
+      firstProject: 85,
+      secondProject: 72,
+      finalExam: 67
+    },
+    {
+      name: "Ruben Pardo",
+      firstProject: 89,
+      secondProject: 72,
+      finalExam: 65
+    }
+]
 
-//     for(let i=0; i< matrix.length -4; i++){
-      
-//       matrix[i].forEach((eachNumber, index))=>{
+let sanitizedGradeBook = students.map((eachStudentObject)=>{
+
+  let sanitizedStudent = {};
+  sanitizedStudent.name = eachStudentObject.name;
+  sanitizedStudent.finalExam = eachStudentObject.finalExam;
+  return sanitizedStudent;
+  the return statement inside the map is not what you are getting at the end, it's what is going into the new array a bunch of times 
+})
+
+console.log(sanitizedGradeBook);
+
+____________________________________________
 
 
-//       matrix[i][0]
-//       matrix[i+1][0]
-//       }
-//     }
-
-// return greatest;
-
-// }
