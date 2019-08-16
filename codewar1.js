@@ -1,24 +1,42 @@
-let timeThing= '2h 22min';
-let other = '2h';
-let otherOther = '90min';
 
 
-function timeStringToMin(timeSting){
-  if(timeString.indexOf('h') > -1) && timeString.indexOf('min') > -1) {
 
-  let timeArray = timeString.split('h');
-  timeArray[0] = parseInt(timeAray[0]);
-  timeArray[1] = parseInt(timeArray[1]);
-  let totalMinutes = (timeArray[0]*60 + timeArray[1]).toString();
-  return totalMinutes;
-} else if(timeString.indexOf('h')) > -1 {
-  let numberOfHours = parseInt(timeString);
-  let totalMinutes = numberOfHours * 60;
-} else {
-}
-  return totalMinutes;
-  // console.log(timeArray[1]);
-}
+// constructor
 
-
-timeStringToMin(other);
+function Soldier(health, strength){
+    this.health = health;
+    this.strength = strength;
+  
+  // attack() method
+  
+    this.attack = function(){
+      return this.strength;
+    }
+  }
+  
+  // instatiate an object
+  // const soldier1 = viking  
+  
+  // recieveDamage() method
+  
+  receiveDamage: function(theDamage) {
+  // remove the recieved damage from the health property
+  // return nothing (undefined?)
+  }
+  
+  // VIKING 
+  
+  // A Viking is a Soldier with an additional property, their name. They also have a different receiveDamage() method and new method, battleCry().
+  
+  // Modify the Viking constructor function, have it inherit from Soldier, reimplement the receiveDamage() method for Viking, and add a new battleCry() method.
+  
+  // inheritance
+  // Viking should inherit from Soldier
+  
+  // let Soldier = new Viking 
+  
+  const viking = new Soldier('name', recieveDamage)
+  
+  
+  
+  
